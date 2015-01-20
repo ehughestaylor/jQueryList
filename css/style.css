@@ -351,5 +351,8 @@ MEDIA QUERIES
 	}
 	#card figure {
 	  width: initial;
-}
+	}
+	.social li > a {
+	display: none;
+	}
 }
