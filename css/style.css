@@ -289,7 +289,6 @@ li:last-child{
 }
 /*Footer*/
 .social {
-  margin-top: -2em;
   list-style:none;
   text-align:center;
   font-size: 1.51em;
@@ -343,7 +342,7 @@ MEDIA QUERIES
 	  height: 80%;
 	}
 	.side2 {
-		height: 100%;
+		height: 80%;
 		margin-bottom: 1em;
 	}
 	li * {
@@ -358,7 +357,10 @@ MEDIA QUERIES
 	#card figure {
 	  width: initial;
 	}
-	.social li > a:hover {
-	display: none;
-}
+	.firstbutton {
+		margin-bottom: 10px;
+	}
+	#content .started {
+		margin-bottom: 10px;
+	}
 }

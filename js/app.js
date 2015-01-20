@@ -43,6 +43,7 @@ $(document).ready(function() {
 	$("#add").on('click', addListItem);
 	// end add function	
 	$(document).on('click','#flip', flipCard);
+	$(document).on('click','#flipback2', flipCard);
 	$(document).on('click', '.delete', deleteItem);
 	$(document).on('click', '.box', changeBox);
 	$(document).on('click', '.box', finishItem);
