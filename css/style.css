@@ -1,0 +1,360 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*START*/
+body {
+	background-color: #CEF61C;
+}
+.container {
+	max-width: 417px;
+	height: 600px;
+	margin: 30px auto 30px;
+	position: relative;
+	perspective: 800px;
+}
+.side1 figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.side2 figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+#card {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+}
+#card figure {
+  display: block;
+  position: absolute;
+  width: 100%;
+/*  height: 100%;*/
+  backface-visibility: hidden;
+  	-webkit-backface-visibility: hidden;
+ 	-moz-backface-visibility: hidden;
+   -o-backface-visibility: hidden;
+}
+
+#card .side1{
+  transform: rotateY( 180deg );
+  margin-bottom: 1em;
+}
+#card.flipped {
+  transform: rotateY( 180deg );
+}
+.side1{
+	color: #34495e;
+	border-radius: 10px;
+	background-color: #3CADB2;
+	padding: 1em;
+}
+.flipback {
+	text-align: center;
+	background-color: #F41A03;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	border-radius: 10px;
+	padding: 0.3em;
+	font-size: 1.2em;
+	font-family: 'Francois One', sans-serif;
+}
+.flipback:hover {
+	color: black;
+}
+
+/*Side Two Styles*/
+.side2{
+	border-radius: 10px;
+	background-color: #F41A03;
+	padding: 1em;
+	height: 90%;
+}	
+#content{
+		font-family: 'Francois One', sans-serif;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	#content h1 {
+		font-size: 2.0em;
+		margin-top: 0.5em;
+		margin-bottom: 1em;
+		color:white;
+		padding-bottom: 1em;
+		border-bottom: 0.2em solid #3CADB2;
+	}
+	#content p {
+		text-transform: none;
+		font-size: 1.4em;
+		margin-bottom: 2em;
+		font-family: 'Abel', sans-serif;
+		color: #350601;
+	}
+	.firstbutton{
+		padding: 1.5em 2em;
+		border-radius: 1em;
+		border: 0px;
+		cursor: pointer;
+		font-family: 'Francois One', sans-serif;
+		text-transform: uppercase;
+		background-color: #3CADB2;
+		font-size: 1em;
+		color: white;
+	}
+	.firstbutton:focus{
+		border-color: red;
+		outline: 0;
+}
+	.firstbutton:hover {
+		color: black;
+	}
+
+/*End*/
+p {
+	display: block;
+}
+label[for='new-text'],
+.get {
+	color: #013335;
+	text-align: center;
+	display: block;
+	font-weight: 700;
+	font-size: 34px;
+	border-bottom: 3px solid #F41A03;
+	padding: 30px 0 10px;
+	margin: 0 0 1em;
+	text-transform: uppercase;
+	font-family: 'Francois One', sans-serif;
+}
+.get {
+	margin-top: 1em;
+}
+input[type="text"] {
+	margin: 0 auto 1em;
+	text-align: center;
+	font-size: 18px;
+	line-height: 18px;
+	height: 20px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #fff;
+	border-radius: 6px;
+	font-family: 'Abel', sans-serif;
+	color: #888;
+	width: 94%;
+}
+#add {
+	background: none;
+	border: 0px;
+	/* display: block; */
+	/* margin-bottom: 88px; */
+	position: absolute;
+	width: 91%;
+	/* padding: .4em 1em; */
+	/* margin: 0 auto; */
+	border-radius: 0.5em;
+	color: white;
+	background-color: #F41A03;
+	font-size: 2em;
+	font-family: 'Abel', sans-serif;
+	cursor: pointer;
+}
+#add:hover{
+	color: #1DF5FF;
+}
+/*.list {
+	clear: both;
+}*/
+#todolist {
+	margin: 0;
+	padding: 0;
+}
+.done{
+	margin: 0 10px;
+	position: relative;
+	top: 15px;
+}
+
+li * {
+	float: left;
+}
+li span {
+	font-size: 18px;
+	line-height: 40px;
+	width: 66%;
+	font-family: 'Abel', sans-serif;
+	padding: 0 0 0 11px;
+}
+.delete {
+	background: none;
+	border: 0px;
+	color: #e74c3c;
+	font-size: 2em;
+	width: 60px;
+	font-family: 'Abel', sans-serif;
+	cursor: pointer;
+}
+.delete:focus{
+		border-color: red;
+		outline: 0;
+}
+#todolist li {
+	overflow: hidden;
+	padding: 20px 0;
+	border-bottom: 1px solid #eee;
+}
+li:last-child{
+	margin-bottom: 2em;
+}
+.box {
+	float: left;
+	margin-top: 11px;
+	margin-right: 30px;
+	height: 17px;
+	width: 17px;
+	background: url('../img/unchecked.png') 0 0;
+}
+.checked {
+	float: left;
+	margin-top: 11px;
+	margin-right: 30px;
+	height: 17px;
+	width: 17px;
+	background: url('../img/checkbox.png') 0 0;
+}
+
+#new-text:focus{
+	border-color: red;
+	outline: 0;
+}
+
+
+.content_footer{
+  padding: 5em 0;
+  background-color: #0056A4;
+  
+}
+/*Footer*/
+.social {
+  margin-top: -2em;
+  list-style:none;
+  text-align:center;
+  font-size: 1.51em;
+  text-decoration: none;
+}
+.footer-p,
+.img-by
+{
+  text-align:center;
+  font-family:'Open Sans', sans-serif;
+  margin-bottom: 1em;
+  margin-left: 3.1em;
+  color: white;
+}
+.social li {
+  display: inline-block;
+  margin: 1em;
+}
+.social li > a {
+  color: #F48903;
+  text-decoration:none;
+  font-family:'Open Sans', sans-serif;
+}
+.social li > a:hover {
+  color: white;
+  font-size:1.1em;
+  transition-duration:.4;
+}
+.img-by,
+.img-by > a{
+  font-size: .8em;
+  text-decoration:none;
+  color: white;
+}
+
+section > p{
+  letter-spacing: .01em;
+}
+
+
+/***************
+MEDIA QUERIES
+***************/
+
+@media only screen and (max-width:550px){
+	.container {
+		width: 80%;
+	}
+	.side1 figure {
+	  width: 80%;
+	  height: 80%;
+	}
+	.side2 {
+		height: 100%;
+		margin-bottom: 1em;
+	}
+	li * {
+		float: none;
+		margin-left: 0.5em;
+	}
+	#card {
+		position: absolute;
+		transform-style: preserve-3d;
+		transition: transform 1s;
+	}
+	#card figure {
+	  width: initial;
+}
+}
