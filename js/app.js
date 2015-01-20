@@ -32,18 +32,29 @@ function onEnter(){
  	});
 }
 
-function flipCard(){
-	var card=$("#card");
-	card.toggleClass('flipped');
-}
 
 $(document).ready(function() {
 	onEnter();
 	$('#todolist').sortable();
 	$("#add").on('click', addListItem);
+	//animations
+	$('#list').hide();
+	$("#tobottom").on('click', function(){
+		$('#content').fadeOut('slow'),
+		$('#list').slideUp('slow', function(){
+			$('#list').show();
+		});
+	});
+	$("#totop").on('click', function(){
+		$('#content').fadeIn('slow');
+		$('#list').fadeOut('slow');
+	});
 	// end add function	
+<<<<<<< HEAD
 	$(document).on('click','#flip', flipCard);
 	$(document).on('click','#flipback2', flipCard);
+=======
+>>>>>>> 89deedc4ae5dab6052da06b8d493ccfccf429b1e
 	$(document).on('click', '.delete', deleteItem);
 	$(document).on('click', '.box', changeBox);
 	$(document).on('click', '.box', finishItem);
