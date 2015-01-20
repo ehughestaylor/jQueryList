@@ -32,7 +32,6 @@ function onEnter(){
  	});
 }
 
-
 $(document).ready(function() {
 	onEnter();
 	$('#todolist').sortable();
@@ -49,9 +48,6 @@ $(document).ready(function() {
 		$('#content').fadeIn('slow');
 		$('#list').fadeOut('slow');
 	});
-	// end add function	
-	$(document).on('click','#flip', flipCard);
-	$(document).on('click','#flipback2', flipCard);
 	$(document).on('click', '.delete', deleteItem);
 	$(document).on('click', '.box', changeBox);
 	$(document).on('click', '.box', finishItem);
