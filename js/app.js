@@ -1,4 +1,3 @@
-//Add Item
 
 function addListItem(){
 	var text = $("#new-text").val();
