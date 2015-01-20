@@ -1,4 +1,5 @@
-
+Skip to content
+ This repositor
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,9 +44,18 @@ table {
 	border-spacing: 0;
 }
 
-/*START*/
+/*****************************
+START
+******************************/
+/*colors:
+yellow #CEF61C;
+red #F41A03;
+blue #3CADB2; 
+black #013335;
+*/
+
 body {
-	background-color: #CEF61C;
+	background-color: #247174;
 }
 div#content,
 div#list{
@@ -56,23 +66,8 @@ div#list{
 #content {
 	color: #34495e;
 	border-radius: 10px;
-	background-color: #3CADB2;
+	background-color: #F46203;
 	padding: 1em;
-}
-#totop{
-	text-align: center;
-	background-color: #F41A03;
-	color: white;
-	display: block;
-	margin: 0 auto;
-	border: none;
-	border-radius: 10px;
-	padding: 0.6em;
-	font-size: 1.2em;
-	font-family: 'Francois One', sans-serif;
-}
-#totop:hover{
-	color: #34495e;
 }
 
 /*/List styles/*/
@@ -82,52 +77,85 @@ div#list{
 	padding: 1em;
 }	
 #content{
-		font-family: 'Francois One', sans-serif;
-		text-align: center;
-		color: #34495e;
-		background-color: #F41A03;
-		text-transform: uppercase;
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	color: #34495e;
+	text-transform: uppercase;
 	}
-	#content h1 {
-		font-size: 2.0em;
-		margin-top: 0.5em;
-		margin-bottom: 1em;
-		color:white;
-		padding-bottom: 1em;
-		border-bottom: 0.2em solid #3CADB2;
+#content h1 {
+	font-size: 2.4em;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	color: black;
+	border-bottom: 0.2em solid #3CADB2;
 	}
-	#content p {
-		text-transform: none;
-		font-size: 1.4em;
-		margin-bottom: 2em;
-		font-family: 'Abel', sans-serif;
-		color: #350601;
-		width: 80%;
-		margin: 0 auto 2em;
+#content p {
+	text-transform: none;
+	font-size: 2.0em;
+	font-family: 'Abel', sans-serif;
+	color: white;
+	width: 80%;
+	margin: 0 auto .9em;
 	}
-	.firstbutton{
-		padding: 1.5em 2em;
-		border-radius: 1em;
-		border: 0px;
-		cursor: pointer;
-		font-family: 'Francois One', sans-serif;
-		text-transform: uppercase;
-		background-color: #3CADB2;
-		font-size: 1em;
-		color: white;
-	}
-	.firstbutton:focus{
-		border-color: red;
-		outline: 0;
-}
-	.firstbutton:hover {
-		color: #34495e;
-	}
-
-/*End*/
 p {
 	display: block;
 }
+.started {
+	margin-bottom: 0.4em;
+}
+/*****************************
+Buttons
+******************************/
+#tobottom {
+	padding: 1.5em 2em;
+	border-radius: 1em;
+	border: 0px;
+	cursor: pointer;
+	font-family: 'Francois One', sans-serif;
+	text-transform: uppercase;
+	background-color: #9CD0B9;
+	font-size: 1.3em;
+	margin-bottom: 2em;
+	color: #34495e;
+	}
+#tobottom:focus{
+	border-color: red;
+	outline: 0;
+	}
+#totop{
+	text-align: center;
+	border: 1px solid black;
+	color: #34495e;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 0.6em;
+	font-size: 1.2em;
+	font-family: 'Francois One', sans-serif;
+}
+#totop:hover{
+	color: #34495e;
+}
+#add {
+	border: 0px;
+	width: 50%;
+	display: block;
+	 margin: 0 auto; 
+	border-radius: 0.5em;
+	color: white;
+	background-color:#F46203;
+	font-size: 2em;
+	font-family: 'Abel', sans-serif;
+	cursor: pointer;
+}
+#add:hover{
+	color: #34495e;
+}
+/*SHOPPING LIST	*/
+
 label[for='new-text'],
 .get {
 	color: #013335;
@@ -135,14 +163,11 @@ label[for='new-text'],
 	display: block;
 	font-weight: 700;
 	font-size: 34px;
-	border-bottom: 3px solid #F41A03;
+	border-bottom: 3px solid #F46203;
 	padding: 30px 0 10px;
 	margin: 0 0 1em;
 	text-transform: uppercase;
 	font-family: 'Francois One', sans-serif;
-}
-.get {
-	margin-top: 1em;
 }
 input[type="text"] {
 	margin: 0 auto 1em;
@@ -157,22 +182,6 @@ input[type="text"] {
 	font-family: 'Abel', sans-serif;
 	color: #888;
 	width: 94%;
-}
-#add {
-	background: none;
-	border: 0px;
-	width: 50%;
-	display: block;
-	 margin: 0 auto; 
-	border-radius: 0.5em;
-	color: white;
-	background-color: #F41A03;
-	font-size: 2em;
-	font-family: 'Abel', sans-serif;
-	cursor: pointer;
-}
-#add:hover{
-	color: #34495e;
 }
 /*.list {
 	clear: both;
@@ -197,6 +206,7 @@ li span {
 	padding: 0 0 0 11px;
 }
 .delete {
+	float: right;
 	background: none;
 	border: 0px;
 	color: #e74c3c;
@@ -238,15 +248,9 @@ li:last-child{
 	outline: 0;
 }
 
-
-.content_footer{
-  padding: 5em 0;
-  background-color: #0056A4;
-  
-}
-/*Footer*/
+/*****************************
+Footer***************************/
 .social {
-  margin-top: -2em;
   list-style:none;
   text-align:center;
   font-size: 1.51em;
@@ -291,11 +295,9 @@ section > p{
 /***************
 MEDIA QUERIES
 ***************/
-
 @media only screen and (max-width:550px){
 	div#content,
 	div#list{
 	max-width: 80%;
 	}
-}
 
