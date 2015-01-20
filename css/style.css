@@ -349,11 +349,6 @@ MEDIA QUERIES
 		float: none;
 		margin-left: 0.5em;
 	}
-	#card {
-		position: absolute;
-		transform-style: preserve-3d;
-		transition: transform 1s;
-	}
 	#card figure {
 	  width: initial;
 }
